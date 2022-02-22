@@ -1,0 +1,9 @@
+N-Queens
+Time Taken: 0.0205385684967041
+
+value[1] : 2
+value[2] : 4
+value[3] : 6
+value[4] : 1
+value[5] : 3
+value[6] : 5

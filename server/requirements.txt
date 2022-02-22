@@ -1,3 +1,0 @@
-CSP-Solver
-flask
-gunicorn

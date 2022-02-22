@@ -58,7 +58,7 @@ def LCV(obj, cur):
                 for neighbour in neighbours:
                     left -= 1 if obj.givenValue[neighbour] else 0
                     remaining = remaining if obj.givenValue[neighbour] else neighbour
-                if left is 1:
+                if left == 1:
                     for val in obj.domains[remaining]:
                         obj.value[remaining] = val
                         curr += 1 if not eval(constraint, {"value": obj.value}) else 0
@@ -86,7 +86,7 @@ def toRemove(obj, cur, value):
             for neighbour in neighbours:
                 left -= 1 if obj.givenValue[neighbour] else 0
                 remaining = remaining if obj.givenValue[neighbour] else neighbour
-            if left is 1:
+            if left == 1:
                 for val in obj.domains[remaining]:
                     obj.value[remaining] = val
                     if not eval(constraint, {"value": obj.value}):
