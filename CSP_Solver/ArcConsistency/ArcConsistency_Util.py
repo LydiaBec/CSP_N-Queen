@@ -34,8 +34,6 @@ def RemoveInconsistent(obj, arc, Removed):
     return len(remove) > 0
 
 def makeConsistent(obj, setOfArcs):
-    # Arcs should be as tuple in listOfArcs
-    # arc(x,y) : x -> y
     Removed = []
     while len(setOfArcs) > 0:
         arc = setOfArcs.pop()
