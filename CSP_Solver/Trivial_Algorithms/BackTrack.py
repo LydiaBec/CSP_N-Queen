@@ -1,7 +1,3 @@
-"""
-Works for bivariate as well as multivariate constraints
-"""
-
 from time import time
 
 def BackTracking(obj, cur, start, timeout):
