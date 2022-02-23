@@ -1,7 +1,3 @@
-"""
-Works for bivariate as well as multivariate constraints
-"""
-
 from CSP_Solver.Util import verify
 from time import time
 
